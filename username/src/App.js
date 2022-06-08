@@ -1,20 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import {Form} from 'react-bootstrap'
+import nandan from './Components/Nandan';
+import Ankush1 from './Ankush1';
+import Nandan from './Components/Nandan';
+import NandanState from './Components/NandanState'
+import NandanHandlingevent from './Components/NandanHandlingevent';
+import NandanUsestate from './Components/NandanUsestate';
+import NandanUseeffect from './Components/NandanUseeffect';
+
 
 function App() {
   return (
     <div>
-     <Form>
-  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="name@example.com" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-    <Form.Label>Example textarea</Form.Label>
-    <Form.Control as="textarea" rows={3} />
-  </Form.Group>
-</Form>
+    <Ankush1 name="ankush" fav="superman"/>
+    <Ankush1 name ="nandan" fav="batman"/>
+    <Nandan name="anksuh"/>
+   <NandanState/>
+    <NandanHandlingevent/>
+    <NandanUsestate/>
+    <NandanUseeffect/>
     </div>
   );
 }
